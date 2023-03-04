@@ -1,0 +1,30 @@
+//a=p*(1+(r/100)/n)-p
+#include<stdio.h>
+int main()
+{
+ printf("Enter p.\n");
+ float p;
+ scanf("%f",&p);
+ printf("Enter r.\n");
+ float r;
+ scanf("%f",&r);
+ printf("Enter n.\n");
+ float n;
+ scanf("%f",&n);
+ float A = r/100;
+ float b = A/n;
+ float c = 1+b;
+ float t = cp;
+ float u = t-p;
+ printf("\nThe value of a = %f\n", u);
+ float a = p*(1+(r/100)/n)-p;
+ printf("The value of t according to formula = %f\n", a);
+ if(a==u) 
+ {
+   printf("\nThe equation is true.\n");
+ }
+ else 
+{
+  printf("The equation does not hold true.");
+}
+}

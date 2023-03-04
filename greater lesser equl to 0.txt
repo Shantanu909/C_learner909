@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+ float a,b;
+ printf("Enter your number.\n");
+ scanf ("%f", &a);
+ if(a>0)
+ {
+	printf("Your number is greater than zero");
+ }
+ else if(a==0)
+ {
+	printf("Your number is equal to zero");
+ }
+ else
+ {
+	printf("Your number is smaller than zero");
+ }
+}
+

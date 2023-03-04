@@ -1,0 +1,13 @@
+//Calculate the area of Triangle
+#include<stdio.h>
+int main()
+{
+float h,b;
+printf("Enter the dimensions(as stated) of triangle whose area is to be calculated.\n"); 
+printf("Please enter the value of height.\n");
+scanf("%f",&h); 
+printf("\nPlease enter the length of base.\n"); 
+scanf("%f",&b);
+float area = 0.5*b*h;
+printf ("\nThe area of the given triangle is = %f", area);
+}

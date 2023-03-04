@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+ float r,p,t;
+ printf("Welcome to the program for calculating simple intrest.\n");
+ printf("Please enter your rate of intrest.\n");
+ scanf("%f", &r);
+ printf("Please enter your principal value.\n");
+ fflush(stdin);
+ scanf("%f", &p);
+ printf("Please enter your time period.\n");
+ fflush(stdin);
+  scanf("%f", &t);
+  float S = (p*r*t);
+  float A = S/100.00;
+  printf("Your simple intrests amounts to a total of %f", A);
+}
+
+
+

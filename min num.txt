@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+ float a,b;
+ printf("Enter your first number.\n");
+ scanf ("%f", &a);
+
+ printf("Enter your second number.\n");
+ scanf ("%f", &b);
+ if(a>b)
+ {
+	printf("Minimum number amongst the two given is%f", b);
+ }
+ else
+{
+	printf("Minimum number amongst the two given is%f", a);
+
+}
+}

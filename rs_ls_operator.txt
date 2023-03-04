@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+ printf("Enter your number.\n");
+ float i;
+ scanf("%f",&i);
+ float a = i-3;
+ float b = i+3;
+ printf("\nRight shift operator results in %f\n", a);
+ printf("Left shift operator results in %f\n", b);
+}

@@ -1,0 +1,22 @@
+//Q. Write a program to give increment decremt operators
+ #include<stdio.h>
+int main()
+{
+ float a;
+ printf("Welocome to the program for basic arthimatic operators.\n");
+ printf("Please enter your number.\n");
+ scanf ("%f", &a);
+ 
+ float b = ++a;
+ printf("\nPre-increment operator results in %f", b);
+ 
+ 
+ float d = --a;
+ printf("\nPre-decrement operator results in %f", d);
+ float c = a++;
+ printf("\nPost-increment operator results in %f", c);
+
+
+ float e = a--;
+ printf("\nPost-decrement operator results in %f", e);
+}

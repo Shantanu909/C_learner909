@@ -1,0 +1,40 @@
+//. Write a program to implement arithmatic operators.
+ #include<stdio.h>
+int main()
+{
+ float a,b;
+ printf("Welocome to the program for basic arthimatic operators.\n");
+ printf("Please enter your first variable.\n");
+ scanf ("%f", &a);
+ printf("Please enter your second variable.\n");
+ scanf("%f", &b);
+ printf("Your numbers are =%f\n", a , b);
+ float sum = a+b;
+ printf("Sum of the two number is %f\n", sum);
+ float diff;
+   
+  int c,d;
+  c = (int)(a);
+  d = (int)(b);
+ if(a>b)
+ {
+  diff = a-b;
+  printf("Difference of two numbers is %f\n", diff);
+  float quotient = a/b;
+  printf("Quotient of the divison is %f\n", quotient);
+
+  c %= d;
+  printf("\nRemainder of the divison is %d\n", c);
+ b += a;
+ printf("\nSum of the two number is %f\n", b);
+ }
+ else
+ {
+  diff = b-a;
+  printf("Difference of two numbers is %f\n", diff);
+  int s = d/c;
+  printf("Quotient of the divison is %d\n", s);
+  int q = d&c;
+  printf("Remainder of the divison is %d\n", q);
+ }
+}

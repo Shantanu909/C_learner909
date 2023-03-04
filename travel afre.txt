@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+ printf("Welcome to the program to find your travel fare.\n");
+ printf("Please enter your travel distance\n");
+ float d;
+ scanf("%f",&d);
+ if(d>20)
+ {
+  float base = d*7;
+  float total = base+100;
+  printf("\nYou must pay a total of Rs.%f", total);
+ }
+ else
+ {
+  float base = d*10;
+  float total = base+50;
+  printf("\nYou must pay a total of Rs.%f", total);
+ }
+}

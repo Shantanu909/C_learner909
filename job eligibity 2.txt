@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<string.h>
+
+ int main()
+ {
+   char s[5];
+   printf("Please eneter your age.\n");
+   int a;
+   scanf("%d",&a);
+   printf("Please eneter your gender.\n");
+   printf("Use either male or female to describe yur gender.\n");
+   scanf("%s",&s);
+   if(s=="female"||s=="FEMALE")
+   {
+       if(a>24)
+	{
+	   printf("You are eligible");
+	}
+        else
+        {
+	   printf("You are NOT eligible");
+	}
+   }
+   else
+   {
+    if(a>28)
+    {
+     printf("You are eligible");
+    }
+    else
+        {
+	   printf("You are NOT eligible");
+	}
+   }
+}

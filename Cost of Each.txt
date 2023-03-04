@@ -1,0 +1,14 @@
+//Input a Number of Chairs and its Total Cost and Prints the Cost of Each chair.
+#include<stdio.h>
+int main()
+{
+ int num;
+ float tcost;
+ float each;
+ printf("Please enter total number of chairs.\n");
+ scanf("%d",&num);
+ printf("\nPlease enter total cost.\n");
+ scanf("%f",&tcost);
+ each = tcost/num;
+ printf("\nThe cost of each chair =%f\n", each);
+}

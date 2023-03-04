@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+ printf("Welcome to the program for converting Rupee to Dollar.\n");
+ printf("Please enter your denomination in rupees.\n");
+ float r;
+ scanf("%f",&r);
+ printf("\nPlease enter the daily currency exchange rate. Use the form of:\n One dolar = X rupees\n here input  the value of X.\n");
+ float c;
+ scanf("%f",&c);
+ float d = r/c;
+ printf("\n%f rupees amount to a total of %f dollars.",r,d);
+}

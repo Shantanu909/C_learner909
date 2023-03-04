@@ -1,0 +1,13 @@
+//Write a program to subdivide salary.
+#include<stdio.h>
+{
+ int main()
+{
+ float a,b,c;
+ printf("Please input your basic salary.\n");
+ scanf("%f",&a);
+ b = a/2;
+ c =a/10;
+ printf("Your Dearness allowance, DA=.%f\n", a);
+ printf("Your House rent allowance, HRA=.%f\n", c);
+}

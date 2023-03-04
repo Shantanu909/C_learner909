@@ -1,0 +1,28 @@
+//Verify the formula x=((k-4)*(a*4))/100
+#include<stdio.h>
+int main()
+{
+ float X,a,k;
+ printf("Enter the value of a and k in respective fields.\n");
+ printf("Enter the value of a.\n");
+ fflush(stdin);
+ scanf("\n%f",&a);
+ printf("Enter the value of k.\n");
+ fflush(stdin);
+ scanf("\n%f",&k);
+ float x=((k-4)*(a*4))/100;
+ float K = k-4;
+ float A = a*4;
+ float Q = K*A;
+ X = Q/100;
+ printf("\nAccording to the formula your answer is = %f", x);
+ printf("\nYour calculated value for x is = %f", X);
+ if(X==x)
+ {
+ 	printf("\nThe given equation holds true and has been verified.");
+ }
+ else
+ {
+ 	printf("\nThe given equation is not true for all cases and has not beem verified.");
+ }
+}

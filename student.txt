@@ -1,0 +1,25 @@
+#include<stdio.h>
+struct sheet
+{
+ int number;
+ //char name[10];
+ float roll;
+}s1,s2;
+int main()
+{
+ //s1.number = 10;
+ //s1.name = ;
+ //s1.roll = 10.635;
+ printf("John's fav digit is = %d\n",s1.number);
+ //printf("John's alias name is = %s",s1.name);
+ printf("John's rol number is = %f\n",s1.roll);
+ printf("Please enter your fav digit.\n");
+ scanf("%d",&s2.number);
+// printf("Please enter your alias name.");
+ //scanf("%s",&s2.name);
+ printf("\nPlease enter your roll.\n");
+ scanf("%f",&s2.roll);
+ printf("\n your roll is =%f.\n", s2.roll);
+  printf("\n your fav digit is =%d.\n", s2.number);
+ return 0;
+}

@@ -1,0 +1,14 @@
+//Q. Write a program to run condiitonal operator.
+/** Writing a progrma to check if the given roll number has passed or not.**/
+
+ #include<stdio.h>
+int main()
+{
+ float a;
+ printf("Welocome to the program for result checking.\n");
+ printf("Please enter your roll number.\n");
+ scanf ("%f", &a);
+printf("Your roll number is %f", a);
+(a==10)?printf("fail"):printf("pass");
+
+ 

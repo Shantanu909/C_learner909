@@ -1,0 +1,24 @@
+//Write a progrma to demonstrate the use of int, char, float.
+#include<stdio.h>
+int main()
+{
+ int i;
+ float f;
+ char c;
+ double d;
+ printf("Please enter an integer value\n");
+ scanf("%d",&i);
+ printf("Please enter a character value\n");
+ fflush(stdin);
+ scanf("%c",&c);
+ printf("Please enter a float value\n");
+ fflush(stdin);
+ scanf("%f",&f);
+ printf("Please enter a double value\n");
+ fflush(stdin);
+ scanf("%lf",&d); 
+ printf("Your intger number is =%d\n", i);
+ printf("Your character number is =%c\n", c);
+ printf("Your float number is =%f\n", f);
+ printf("Your double number is =%lf\n", d);
+}

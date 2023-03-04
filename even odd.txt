@@ -1,0 +1,17 @@
+#include <stdio.h>
+    int main()
+    {
+        int a,b,c,H;
+        
+        printf("Enter your Three digit number.\n");
+        scanf("%d",&H);
+        printf("You have entered the number%d",&H);
+        if(H%2==0)
+        {
+	  printf("The given number is even");
+	}
+	else 
+	{
+          printf("The given number is odd");
+	}        
+    }

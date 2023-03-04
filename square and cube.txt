@@ -1,0 +1,13 @@
+//squaring and cubing the number.
+#include<stdio.h>
+int main()
+{
+ float f;
+ printf("Please enter the number you want to square and cube.\n");
+ scanf("%f", &f);
+ double d, dd;
+ d= f*f;
+ dd = f*f*f;
+ printf("Square of your number is.%lf\n", d);
+ printf("Cube of your number is.%lf", dd);
+}

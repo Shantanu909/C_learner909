@@ -1,0 +1,45 @@
+//Input two numbers and prints its Addition, Subtraction, Multiplication, and Division.
+ #include<stdio.h>
+int main()
+{
+ float a,b;
+ printf("Welocome to the program for basic calculations\n");
+ printf("Please enter your first variable.\n");
+ scanf ("%f", &a);
+ printf("Please enter your second variable.\n");
+ scanf("%f", &b);
+ printf("Your numbers are =%f %f\n", a , b);
+ float diff;
+   
+  int c,d;
+  c = (int)(a);
+  d = (int)(b);
+ if(a>b)
+ {
+  diff = a-b;
+  printf("Difference of two numbers is %f\n", diff);
+  float quotient = a/b;
+  printf("Quotient of the divison is %f\n", quotient);
+  int c = (int)(a);
+  int d = (int)(b);
+
+  c %= d;
+  printf("\nRemainder of the divison is %d\n", c);
+ b += a;
+ printf("\nSum of the two number is %f\n", b);
+ }
+ else
+ {
+  diff = b-a;
+  printf("Difference of two numbers is %f\n", diff);
+  float quotient = b/a;
+  printf("Quotient of the divison is %f\n", quotient);
+  int c = (int)(a);
+  int d = (int)(b);
+
+  d %= c;
+  printf("\nRemainder of the divison is %d\n", d);
+  b += a;
+  printf("\nSum of the two number is %f\n", b);
+ }
+}

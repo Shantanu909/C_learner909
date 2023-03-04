@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+ printf("Enter a.\n");
+ float a;
+ scanf("%f",&a);
+  printf("Enter b.\n");
+ float b;
+ scanf("%f",&b);
+ printf("Enter c.\n");
+ float c;
+ scanf("%f",&c);
+ float A = 4*a;
+ float B = A+c;
+ float C = 2*a*b;
+ float D = B-C;
+ float E = D/100;
+ printf("\nThe value of a = %f\n", E);
+ float s=((4*a+c)-2*a*b)/100;
+ printf("The value of t according to formula = %f\n", s);
+ if(E==s) 
+ {
+   printf("\nThe equation is true.\n");
+ }
+ else 
+{
+  printf("The equation does not hold true.");
+}
+}

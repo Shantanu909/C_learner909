@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+ printf("Enter l.\n");
+ float l;
+ scanf("%f",&l);
+ printf("Enter m.\n");
+ float m;
+ scanf("%f",&m);
+ printf("Enter v.\n");
+ float v;
+ scanf("%f",&v);
+ printf("Enter s.\n");
+ float s;
+ scanf("%f",&s);
+ float a = v+s;
+ float b = l-m;
+ float c = b*l;
+ float t = a+c;
+ printf("\nThe value of t = %f\n", t);
+ float T = v+s+(l-m)*l;
+ printf("The value of t according to formula = %f\n", T);
+ if(T==t) 
+ {
+   printf("\nThe equation is true.\n");
+ }
+ else 
+{
+  printf("The equation does not hold true.");
+}
+}
