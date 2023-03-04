@@ -1,0 +1,11 @@
+#include<stdio.h>
+void main()
+{
+ printf("Enter your numbers");
+ int H,J;
+ scanf("%d, %d" H,J);
+ int d = H&J;
+ printf("Bitwise and operator is %d",d );
+ int e = H|J;
+ printf("Bitwise or operator is %d",e );
+ }

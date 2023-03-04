@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+ float r,p,t;
+ printf("Welcome to the program for calculating compound intrest.\n");
+ printf("Please enter your rate of intrest.\n");
+ scanf("%f", &r);
+ printf("Please enter your principal value.\n");
+ fflush(stdin);
+ scanf("%f", &p);
+ printf("Please enter your time period.\n");
+ fflush(stdin);
+  scanf("%f", &t);
+  float A = 1+(r/n);
+  float C = P(A)^(nt);
+ 
+  printf("Your compound intrests amounts to a total of %f", C);
+}
+
+
+

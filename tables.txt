@@ -1,0 +1,87 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+
+int main() 
+{
+    int a, b;
+    scanf("%d\n%d", &a, &b);
+    int c,i;
+  	// Complete the code.
+    if(a>b)
+    {
+    c= a-b;
+    for (i=a;i<c;i++)
+    {
+        
+    }
+    }
+    else
+    {
+    c = b-a;
+    for (i=b;i<c;i++)
+    {
+        
+    }
+    }
+    
+}
+
+
+
+
+if(n>0||n<10)
+    {
+     if(n==1)  
+     {
+         printf("one"); 
+     }
+     if(n==2)  
+     {
+         printf("two"); 
+     }
+     if(n==3)  
+     {
+         printf("three"); 
+     }
+     if(n==4)  
+     {
+         printf("four"); 
+     }
+     if(n==5)  
+     {
+         printf("five"); 
+     }
+     if(n==6)  
+     {
+         printf("six"); 
+     }
+     if(n==7)  
+     {
+         printf("seven"); 
+     }
+     if(n==8)  
+     {
+         printf("eight"); 
+     }
+     if(n==9)  
+     {
+         printf("nine"); 
+     }
+    }
+    else
+    {
+    if(n%2==0)
+        {
+          printf("even");
+        }
+    else
+    {
+       printf("odd"); 
+    }
+    
+    }
+}

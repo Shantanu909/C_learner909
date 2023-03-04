@@ -1,0 +1,20 @@
+#include <stdio.h>
+#define MAX 100
+  
+int main()
+{
+    FILE* fp;
+    
+    char filename[MAX];
+    char c;
+    printf("Enter file name: ");
+    scanf("%s", filename);
+    fp = fopen(filename, "r");
+  
+    for (c = getc(fp); c != EOF; c = getc(fp))
+    {	
+	   putc( c,fp);
+    }
+	fclose(fp);
+}
+

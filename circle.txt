@@ -1,0 +1,17 @@
+#include<stdio.h>
+void count(float a, float *b, float *c)
+{ 
+   *b = 3.14*a*a;
+   *c = 2*3.14*a;
+}
+
+
+int main()
+{
+ float r,P,A;
+ printf("Please enter the radius.\n");
+ scanf("%d",&r);
+ count(r,&P,&A);
+ printf("Area is = %f",A);
+ printf("Perimeter is = %f",P);
+}

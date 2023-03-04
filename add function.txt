@@ -1,0 +1,17 @@
+#include<stdio.h>
+int user(int, int);
+ user(int a, int b)
+ {
+   int c = a+b;
+   printf("%d", c);
+}
+ 
+int main()
+{
+  int s,e;
+  printf("Please enter two numbers you want to add.\n");
+  scanf("%d %d",&s,&e);
+  user(s,e);
+}
+
+ 
