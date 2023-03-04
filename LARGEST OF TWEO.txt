@@ -1,0 +1,10 @@
+Write an algorithm to find the largest of two numbers.
+
+1.Start
+2. Take input of two numbers.
+3. Store them in itegers a and b.
+4. If a>b
+5. Print s is the largest 
+6. Else 
+7. Print b is the largest 
+8. End

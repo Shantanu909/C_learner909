@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+{
+    int H;
+        
+    printf("Enter your number.\n");
+    scanf("%d",&H);
+    int a = H*1;
+    printf("\n %d X 1 = %d", a);
+	int b = H*2;
+	printf("\n %d X 2 = %d", b);
+	int c = H*3;
+	printf("\n %d X 3 = %d", c);
+	int d = H*4;
+	printf("\n %d X 4 = %d", d);
+	int e = H*5;
+	printf("\n %d X 5 = %d", e);
+	int f = H*6;
+   	 printf("\n %d X 6 = %d", f);
+	int g = H*7;
+	printf("\n %d X 7 = %d", g);
+	int h = H*8;
+ 	printf("\n %d X 8 = %d", h);
+	int i = H*9;
+	printf("\n %d X 9 = %d", i);
+	int j = H*10;
+	printf("%d X 10 = %d", j);
+} 

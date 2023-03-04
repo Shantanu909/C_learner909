@@ -1,0 +1,14 @@
+#includestdio.h>
+int main()
+{
+	printf("Enter your number with upto 10 digits");
+	int H;
+	scanf("%d", &H);
+	int j = 100;
+	int a = 0;
+	for(int i=0;i<j;i--)
+	{
+		a = a+1
+		prinf("%d", a);
+		for (int s = 0;s<a;s++)
+	}

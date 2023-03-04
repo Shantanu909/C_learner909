@@ -1,0 +1,85 @@
+/**Creating a program to check for eligibility for maximum package.**/
+#include<stdio.h>
+ int main()
+{
+	char G,b,s;
+	int w,a;
+	printf("Welcome to the salary tracking services.\n");
+	printf("Please select your Gender.\n");
+	scanf("%c", &G);
+	printf("You have choosen %c", G);
+	if(G=='M')
+	{
+		printf("\nPlease state the number of years you have worked previously.\n");
+		fflush(stdin);
+		scanf("%d", &w);
+		printf("\nPlease state your latest academic degree.");
+		printf("\nFor PostGraduate, input P.");
+		printf("\nFor UnderGraduate, input U.\n");
+		fflush(stdin);
+		scanf("%c", &s);
+		{
+			if(w>9&&s=='P')
+			{		
+				printf("You are eligible for a maximum slary package of:\n Rs.15000");
+			}
+			else if(w>9&&s=='U')
+			{
+				printf("You are eligible for a maximum slary package of:\n Rs.10000");
+			}
+			else if(w<10&&s=='P')
+			{
+				printf("You are eligible for a maximum slary package of:\n Rs.10000");
+			}
+			else if(w<10&&s=='U')
+			{
+				printf("You are eligible for a maximum slary package of:\n Rs.7000");
+			}
+			else
+			{
+				printf("Wrong input");
+			}
+			}
+		
+		}
+	
+	else if(G=='F')
+	{
+		printf("Please state the number of years you have worked previously.");
+		fflush(stdin);
+		scanf("%d", &a);
+		printf("Please state your latest academic degree.");
+		printf("For PostGraduate, input P.");
+		printf("For UnderGraduate, input U.");
+		fflush(stdin);
+		scanf("%c", &b);
+		if(a>9&&b=='P')
+		{		
+			printf("You are eligible for a maximum slary package of:\n Rs.15000");
+		}
+		else if(a>9&&b=='U')
+		{
+			printf("You are eligible for a maximum slary package of:\n Rs.10000");
+		}
+		else if(a<10&&b=='P')
+		{
+			printf("You are eligible for a maximum slary package of:\n Rs.10000");
+		}
+		else if(a<10&&b=='U')
+		{
+			printf("You are eligible for a maximum slary package of:\n Rs.7000");
+		}
+		else
+		{
+			printf("Wrong input");
+		}
+	}
+	else
+	{
+		printf("Please select either F or M");
+	}
+}
+
+
+
+

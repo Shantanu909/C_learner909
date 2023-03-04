@@ -1,0 +1,32 @@
+#include <stdio.h>
+    int main()
+    {
+        int a,b,c,H;
+        
+        printf("Enter your five digit number.\n");
+        scanf("%d",&H);
+        int e = H%10000;
+        int q = (H-e)/10000;
+        printf("Your fifth digit number is = %d", q);
+        int g = e%1000;
+        int p = (e-g)/1000;
+        printf("\nYour fourth digit number is = %d", p);
+        int a = g%100;
+        int b = (g-p)/100;
+	printf("Your third digit number is = %d", a);
+        int c = a%10;
+	int d = (a-b)/100;
+        printf("\nYour hundreth digit number is = %d", c);
+	
+        int x = c*10000;
+        int k = a*1000;
+        int aa = p*100;
+        int bb = q*10;
+        int y = x+k+aa+bb;
+        int s = (H-y);
+        printf("\n Your unit digit number is = %d", s);
+        int ff = y+s
+        printf("\n Reverted numebr is =%d", ff);
+        
+        
+       

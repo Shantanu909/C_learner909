@@ -1,0 +1,862 @@
+
+                        
+//Welcome to the portal for calculating and managing tickets and revenue at a movie theater.
+
+
+
+#include<stdio.h>
+	
+int main()
+{
+	null://for empty values in managers portal
+	int s1d1 =100,s2d1 =100, s3d1=100,s1d2 =100,s2d2 =100, s3d2=100,s1d3 =100,s2d3 =100, s3d3=100,s1d4 =100,s2d4 =100, s3d4=100,s1d5 =100,s2d5 =100, s3d5=100, s1d6 =100, s2d6 =100,s1d7 =100,s2d7 =100;
+  char who;
+  int day,day1,choice,option,VIP,showt,count =0, count1=0, timings,refund=0,revenue;
+  printf("Welcome to the ticket booking system.\n");
+  printf("Are you a user or Mr. Rajkumar?\n");//MAIN DIVERSION
+  printf("A. User\n");
+  printf("B. Manager\n");
+  fflush(stdin);//for flushing out previous value stored in scanf
+  scanf("%c",&who);
+  if(who=='A')
+  { 
+   full:
+
+   error://error loop
+   	resubmit:
+   printf("The show timings are as per follows:\n");
+   printf("1. Show 1 in morning\n");
+   printf("2. Show 2 in afternoon\n");
+   printf("3. Show 3 in evening\n");
+   printf("We regret to inform that on weekend only Show 1 and 2 are availalble.\n");
+   printf("Also, delayed customers can only select the last shows.\n");
+   printf("Please enter your convinient show timing:\n");
+   scanf("%d",&showt);
+   begin:
+   printf("Please enter today's day as per follows:\n");
+   printf("1. Monday\n");
+   printf("2. Tuesday\n");
+   printf("3. Wednesday\n");
+   printf("4. Thursday\n");
+   printf("5. Friday\n");
+   printf("6. Saturday\n");
+   printf("7. Sunday\n");
+   printf("8. You missed a show.\n");
+   printf("9.You were already delayed and want to still see the show.\n");
+   printf("10. You were delayed both times and now want a refund.\n");
+   scanf("%d",&day);//choice for the user
+   switch(day)
+   {
+   case 1:
+   {
+     
+     printf("You have choosen Monday, so you will be able to book tickets for:.\n");
+     printf("1.Tuesday\n");
+     printf("2.Wednesday\n");
+     printf("Please state your choice.\n");
+     scanf("%d",&choice);
+     if(choice==1&&showt==1)//checking for seats, if there's space
+     {
+     	if(s1d2==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }   
+	 else if(choice==1&&showt==2)
+	 {
+     	if(s2d2==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    else if(choice==1&&showt==3)
+	 {
+     	if(s3d2==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    if(choice==2&&showt==1)
+     {
+     	if(s1d3==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==2&&showt==2)
+	 {
+     	if(s2d3==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    else if(choice==2&&showt==3)
+	 {
+     	if(s3d3==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    break;
+    }   
+	 case 2:
+    {
+     
+     printf("You have choosen Tuesday, so you will be able to book tickets for:.\n");
+     printf("1.Wednesday\n");
+     printf("2.Thursday\n");
+     printf("Please state your choice.\n");
+     scanf("%d",&choice);
+          if(choice==1&&showt==1)
+     {
+     	if(s1d3==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==1&&showt==2)
+	 {
+     	if(s2d3==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    else if(choice==1&&showt==3)
+	 {
+     	if(s3d3==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    if(choice==2&&showt==1)
+     {
+     	if(s1d4==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==2&&showt==2)
+	 {
+     	if(s2d4==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    else if(choice==2&&showt==3)
+	 {
+     	if(s3d4==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    break;
+    }
+    case 3:
+    {
+     
+     printf("You have choosen Wednesday, so you will be able to book tickets for:.\n");
+     printf("1.Thursday\n");
+     printf("2.Friday\n");
+     printf("Please state your choice.\n");
+     scanf("%d",&choice);
+         if(choice==1&&showt==1)
+     {
+     	if(s1d4==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==1&&showt==2)
+	 {
+     	if(s2d4==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    else if(choice==1&&showt==3)
+	 {
+     	if(s3d4==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    if(choice==2&&showt==1)
+     {
+     	if(s1d5==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==2&&showt==2)
+	 {
+     	if(s2d5==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    
+   
+else if(choice==2&&showt==3)
+	 {
+     	if(s3d3==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+}
+    break;
+	}
+    case 4:
+    {
+      
+     printf("You have choosen Thursday, so you will be able to book tickets for:.\n");
+     printf("1.Friday\n");
+     printf("2.Saturday\n");
+     printf("Please state your choice.\n");
+     scanf("%d",&choice);
+              if(choice==1&&showt==1)
+     {
+     	if(s1d7==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==1&&showt==2)
+	 {
+     	if(s2d7==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    else if(choice==1&&showt==3)
+	 {
+     	if(s3d5==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    if(choice==2&&showt==1)
+     {
+     	if(s1d6==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.300\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==2&&showt==2)
+	 {
+     	if(s2d6==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.300\n");
+     count++;
+     printf("Have a good day!");
+    }
+    break;
+}
+    case 5:
+    {
+      
+     printf("You have choosen Friday, so you will be able to book tickets for:.\n");
+     printf("1.Saturday\n");
+     printf("2.Sunday\n");
+     printf("Please state your choice.\n");
+     scanf("%d",&choice);
+         if(choice==1&&showt==1)
+     {
+     	if(s1d6==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.300\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==1&&showt==2)
+	 {
+     	if(s2d6==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.300\n");
+     count++;
+     printf("Have a good day!");
+    }
+    if(choice==2&&showt==1)
+     {
+     	if(s1d7==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.300\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==2&&showt==2)
+	 {
+     	if(s2d7==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.300\n");
+     count++;
+     printf("Have a good day!");
+    }
+    break;     
+    }
+    case 6:
+    {
+     
+     printf("You have choosen Saturday, so you will be able to book tickets for:.\n");
+     printf("1.Sunday\n");
+     printf("2.Monday\n");
+     printf("Please state your choice.\n");
+     scanf("%d",&choice);
+     if(choice==1&&showt==1)
+     {
+     	if(s1d7==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.300\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==1&&showt==2)
+	 {
+     	if(s2d7==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.300\n");
+     count++;
+     printf("Have a good day!");
+    }
+    if(choice==2&&showt==1)
+     {
+     	if(s1d1==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==2&&showt==2)
+	 {
+     	if(s2d1==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    else if(choice==2&&showt==3)
+	 {
+     	if(s3d1==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    break;
+	}
+    case 7:
+    {
+     
+     printf("You have choosen Sunday, so you will be able to book tickets for:.\n");
+     printf("1.Monday\n");
+     printf("2.Tuesday\n");
+     printf("Please state your choice.\n");
+     scanf("%d",&choice);
+    if(choice==1&&showt==1)
+     {
+     	if(s1d1==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==1&&showt==2)
+	 {
+     	if(s2d1==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    else if(choice==1&&showt==3)
+	 {
+     	if(s3d1==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+        if(choice==1&&showt==1)
+     {
+     	if(s1d2==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+ }
+	 else if(choice==1&&showt==2)
+	 {
+     	if(s2d2==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    else if(choice==1&&showt==3)
+	 {
+     	if(s3d2==0)
+     	{
+     	printf("We regret to inform you that this show is fully booked please book other show timings or another date.\n");
+     	goto resubmit;
+		}
+		else
+	 
+     printf("You will be debited a total of Rs.200\n");
+     count++;
+     printf("Have a good day!");
+    }
+    break;
+}
+    case 8:
+    {
+    	printf("Have you previosuly been delayed by any of the issues at our institue ");//for customer service
+		
+    	printf("When was your show?\n");
+    	printf("1. Monday\n");
+        printf("2. Tuesday\n");
+        printf("3. Wednesday\n");
+        printf("4. Thursday\n");
+        printf("5. Friday\n");
+        printf("6. Saturday\n");
+        printf("7. Sunday\n");
+    	scanf("%d",&day1);
+    	if(day1==1)
+    	{
+    		
+    		if(s3d2=!0)//checking if last show is empty 
+    		{
+    		printf("You can come back on Tuesday.\n");
+		    printf("Have a good day!");
+    		}
+    		else if(s3d3=!0)
+    		{
+    		printf("You can come back on Wednesday.\n");
+		    printf("Have a good day!");
+    		}
+		}
+		if(day1==2)
+    	{
+    	
+    		if(s3d3=!0)//checking if last show is empty 
+    		{
+    		printf("You can come back on Wednesday.\n");
+		    printf("Have a good day!");
+    		}
+    		else if(s3d4=!0)
+    		{
+    		printf("You can come back on Thursday.\n");
+		    printf("Have a good day!");
+    		}
+		}
+		if(day1==3)
+    	{
+    	
+    		if(s3d4=!0)//checking if last show is empty 
+    		{
+    		printf("You can come back on Thursday.\n");
+		    printf("Have a good day!");
+    		}
+    		else if(s3d5=!0)
+    		{
+    		printf("You can come back on Friday.\n");
+		    printf("Have a good day!");
+    		}
+		}
+		if(day1==4)
+    	{
+    	
+    		if(s3d5=!0)//checking if last show is empty 
+    		{
+    		printf("You can come back on Friday.\n");
+		    printf("Have a good day!");
+    		}
+    		else if(s2d6=!0)
+    		{
+    		printf("You can come back on Saturday.\n");
+		    printf("Have a good day!");
+    		}
+		}
+		if(day1==5)
+    	    	{
+    	
+    		if(s2d6=!0)//checking if last show is empty 
+    		{
+    		printf("You can come back on Saturday.\n");
+		    printf("Have a good day!");
+    		}
+    		else if(s2d7=!0)
+    		{
+    		printf("You can come back on Sunday.\n");
+		    printf("Have a good day!");
+    		}
+		}
+		if(day1==6)
+    	{
+    	
+    		if(s2d7=!0)//checking if last show is empty 
+    		{
+    		printf("You can come back on Sunday.\n");
+		    printf("Have a good day!");
+    		}
+    		else if(s3d1=!0)
+    		{
+    		printf("You can come back on Monday.\n");
+		    printf("Have a good day!");
+    		}
+		}
+		if(day1==7)
+    	{
+    	
+    		if(s3d1=!0)//checking if last show is empty 
+    		{
+    		printf("You can come back on Monday.\n");
+		    printf("Have a good day!");
+    		}
+    		else if(s3d2=!0)
+    		{
+    		printf("You can come back on Tuesday.\n");
+		    printf("Have a good day!");
+    		}
+		}
+		break;
+	}
+	case 9://for repeated delay
+	{
+		printf("Please join us on the last show on Wednesday next week.\n");
+		printf("Have a good day!");
+		break;
+	}
+	case 10://for refund, those who have been delayed multiple times
+	{
+	    printf("We are sorry for the inconvinience and as a token of apology, you will be refunded fully via e-payment within 3 buisness days.\n");
+	    printf("Have a good day!");
+	    refund++;
+	    break;
+}
+   default://for wrong input
+  {
+   printf("Please select correct option.\n");
+   goto begin;
+  }
+}}
+else if(who=='B')//for manager
+{
+ reset:
+ printf("Welcome Mr. Rajkumar\n");
+ printf("What would you like to do today?\n");
+ printf("1. Add VIP seats for tommorow.\n");
+ printf("2. Monitor revenue generated.\n");
+ scanf("%d",&option);
+ if(option==1)
+ { 
+    printf("How many seats are reserved for VIPs on this day?\n");//vip seat booking
+    fflush(stdin);
+    scanf("%d",&VIP);
+    printf("Which show timing:\n");
+    printf("1. Show 1 in morning\n");
+    printf("2. Show 2 in afternoon\n");
+    printf("3. Show 3 in evening\n");
+    scanf("%d",&timings);
+    printf("Which day do you want to add the seats for.\n");
+    printf("1. Monday\n");
+    printf("2. Tuesday\n");
+    printf("3. Wednesday\n");
+    printf("4. Thursday\n");
+    printf("5. Friday\n");
+    printf("6. Saturday\n");
+    printf("7. Sunday\n");
+    fflush(stdin);
+    scanf("%d",&day1);
+	if(day1==1)
+	{
+		if(timings==1)
+		s1d1 = s1d1-VIP;
+		else if(timings==2)
+		s2d1 = s2d1-VIP;
+		else if(timings==3)
+		s3d1 = s3d1-VIP;
+		printf("Your seats have been added.\n");
+		goto null;
+	}
+    if(day1==2)
+	{
+		if(timings==1)
+		s1d2 = s1d2-VIP;
+		else if(timings==2)
+		s2d2 = s2d2-VIP;
+		else if(timings==3)
+		s3d2 = s3d2-VIP;
+		printf("Your seats have been added.\n");
+		goto null;
+	}
+	if(day1==3)
+	{
+		if(timings==1)
+		s1d3 = s1d3-VIP;
+		else if(timings==2)
+		s2d3 = s2d3-VIP;
+		else if(timings==3)
+		s3d3 = s3d3-VIP;
+		printf("Your seats have been added.\n");
+		goto null;
+	}
+	if(day1==4)
+	{
+		if(timings==1)
+		s1d4 = s1d4-VIP;
+		else if(timings==2)
+		s2d4 = s2d4-VIP;
+		else if(timings==3)
+		s3d4 = s3d4-VIP;
+		printf("Your seats have been added.\n");
+		goto null;
+	}
+	if(day1==5)
+	{
+		if(timings==1)
+		s1d5 = s1d5-VIP;
+		else if(timings==2)
+		s2d5 = s2d5-VIP;
+		else if(timings==3)
+		s3d5 = s3d5-VIP;
+		printf("Your seats have been added.\n");
+		goto null;
+	}
+	if(day1==6)
+	{
+		if(timings==1)
+		s1d6 = s1d6-VIP;
+		else if(timings==2)
+		s2d6 = s2d6-VIP;
+		printf("Your seats have been added.\n");
+		goto null;
+		
+	}	
+	if(day1==7)
+	{
+		if(timings==1)
+		s1d7 = s1d7-VIP;
+		else if(timings==2)
+		s2d7 = s2d7-VIP;
+		printf("Your seats have been added.\n");
+		goto null;
+		
+	}	
+}
+else if(option==2)//weekly revenue calculator
+{
+	revenue = (count*200)+ (count1*300)-(refund*200);
+	goto null;
+}
+else//wrong input
+{
+	printf("Please choose amongst given options.\n");
+	goto error;
+}
+}}

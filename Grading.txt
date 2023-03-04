@@ -1,42 +1,21 @@
 #include <stdio.h>
 int main()
 {
-    float P,C,E,M,H;
+    int H;
         
-    	printf("Enter your Physics marks.\n");
-    	scanf("%f",&P);
-    	printf("Enter your Chemistry marks.\n");
-    	scanf("%f",&C);
-    	printf("Enter your English marks.\n");
-    	scanf("%f",&E);
-    	printf("Enter your Maths marks.\n");
-    	scanf("%f",&M);
-    	printf("Enter your History marks.\n");
-    	scanf("%f",&H);
-        float percentage = (P+C+E+M+H)/5; 
-
-        printf("Your percentage are = %d\n", percentage);
-    	if(percentage>69)
+    	printf("Enter your overall marks.\n");
+    	scanf("%d",&H);
+        printf("Your marks are.%d", H);
+    	if(H>60)
 	{
-	 printf("DISTINCTION");
+	 printf("You got Grade A.")
 	}
-        else if(percentage>60)
+        else if(H>49)
 	{
-	 printf("FRIST CLASS");
-	}
-        else if(percentage>50)
-	{
-	 printf("SECOND CLASS");
-	}
-        else if(percentage>40)
-	{;
-	}
-	else if(percentage<40)
-	{
-	 printf("FAIL.");
+	 printf("You got Grade B.")
 	}
         else
 	{
-	 printf("Wrong input. Give value within 100 marks per subject.");
-}
+	 printf("You got Grade C. You suck");
+	)		
 }

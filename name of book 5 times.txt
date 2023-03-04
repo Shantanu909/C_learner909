@@ -1,0 +1,21 @@
+Write an algorithm and draw an flowchart to print the name of the book 5 times
+
+1. Start 
+2. Take book name in string s
+3. Int j = 5
+4. For i = 0; i<j; i++;
+5. print s
+6. End
+
+#include<stdio.h>
+ int main()
+ {
+	printf("Enter the name of your favourite book");
+	string s;
+	scanf("%s", &s);
+        int j = 5;
+	for(i=0;i<j;i++)
+	{
+	 print s;
+	}
+ }

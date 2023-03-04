@@ -1,0 +1,18 @@
+#include <stdio.h>
+    int main()
+    {
+        int H,I,J;
+        
+        printf("Enter all three brothers ages.\n");
+        scanf("%i", &H);
+        scanf("%i", &I);
+        scanf("%i", &J);
+        
+        if(H>I&&H>J)
+            printf("The oldest brother is %d", H, "years old");
+        else if (I>H&&I>J)
+           printf("The oldest brother is %d", I, "years old");
+        else 
+           printf("The oldest brother is %d years old", J);
+	          
+    }

@@ -1,0 +1,24 @@
+#include <stdio.h>
+    int main()
+    {
+        int a,b,c,H;
+        
+        printf("Enter your Three digit number.\n");
+        scanf("%d",&H);
+        int e = H%100;
+        int q = (H-e)/100;
+        printf("Your unit digit number is = %d", q);
+        int g = e%10;
+        int p = (e-g)/10;
+        printf("\nYour tenth digit number is = %d", p);
+        int x = p*10;
+        int k = q*100;
+        int y = x+k;
+        int s = (H-y);
+       
+        printf("\nYour hundreth digit number is = %d", s);
+      
+        int u = p+q+H;
+        printf("\nYour digit sum is =%d", u);
+        
+    }
