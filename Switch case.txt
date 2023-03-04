@@ -1,0 +1,65 @@
+#include <stdio.h>
+int main()
+{
+    int H;
+        
+    	printf("Please select the day.\n");
+    	printf("Option 1 = Monday\n");
+        printf("Option 2 = Tuesday\n");
+        printf("Option 3 = Wednesday\n");
+        printf("Option 4 = Thursday\n");
+        printf("Option 5 = Friday\n");
+        printf("Option 6 = Saturday\n");
+        printf("Option 7 = Sunday\n");
+        scanf("%d",&H);
+        switch(H){
+		
+        case 1:
+	{
+	 printf("You have selected Monday.\n");
+	 printf("No Holiday");
+	 break;
+	}
+	case 2:
+	{
+	 printf("You have selected Tuesday.\n");
+	 printf("No Holiday");
+	 break;
+	}
+        case 3:
+	{
+	 printf("You have selected Wednesday.\n");
+	 printf("No Holiday");
+	 break;
+	}
+        case 4:
+	{
+	 printf("You have selected Thursday.\n");
+	 printf("No Holiday");
+	 break;
+	}
+        case 5:
+	{
+	 printf("You have selected Friday.\n");
+	 printf("No Holiday");
+	 break;
+	}
+        case 6:
+	{
+	 printf("You have selected Saturday.\n");
+	 printf("Holiday");
+	 break;
+	}
+        case 7:
+	{
+	 printf("You have selected Saturday.\n");
+	 printf("Holiday");
+	 break;
+	}
+	default:
+	{
+	 printf("Give correct input");
+	}}}
+
+      
+      
