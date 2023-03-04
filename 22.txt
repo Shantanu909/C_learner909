@@ -1,0 +1,32 @@
+#include<stdio.h>
+int main()
+{
+ #include<stdio.h>
+int main()
+{
+  int N,H;
+  printf("Please enter 5 values for the matrix\n");
+int arr[5];
+for(int i =0;i<5;i++)
+{
+  scanf("%d",&arr[i]);
+}
+int max=0;
+int min =1000000000000000000;
+for(int j =0;j<5;j++)
+{
+  if(arr[j]>max)
+{ max=arr[j];
+}
+if(arr[j]<min)
+{
+ min = arr[j];
+}}
+}
+
+  
+   
+	
+       
+}
+}

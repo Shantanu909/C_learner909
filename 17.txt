@@ -1,0 +1,42 @@
+#include <stdio.h>
+int main()
+{
+    float P,C,E,M,H;
+        
+    	printf("Enter your Physics marks.\n");
+    	scanf("%f",&P);
+    	printf("Enter your Chemistry marks.\n");
+    	scanf("%f",&C);
+    	printf("Enter your English marks.\n");
+    	scanf("%f",&E);
+    	printf("Enter your Maths marks.\n");
+    	scanf("%f",&M);
+    	printf("Enter your History marks.\n");
+    	scanf("%f",&H);
+        float marks = (P+C+E+M+H)/5; 
+
+        printf("Your marks are = %d\n", marks);
+    	if(marks>69)
+	{
+	 printf("DISTINCTION");
+	}
+        else if(marks>60)
+	{
+	 printf("FRIST CLASS");
+	}
+        else if(marks>50)
+	{
+	 printf("SECOND CLASS");
+	}
+        else if(>40)
+	{;
+	}
+	else if(marks<40)
+	{
+	 printf("FAIL.");
+	}
+        else
+	{
+	 printf("Wrong input. Give value within 100 marks per subject.");
+}
+}

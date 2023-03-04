@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+  int N,b,c,H;
+  printf("Please enter the value of N.");
+  scanf("%d",&N);
+  int fib = 1;
+        for(int i =1;i<N+1;i++)
+	{
+         fibo = fib;
+	 fib = fibo+fib;
+	}
+       
+}

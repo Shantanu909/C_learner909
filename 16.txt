@@ -1,0 +1,50 @@
+#include<stdio.h>
+int main()
+{
+    int H,a,b;
+        
+    	printf("Please select the day.\n");
+    	printf("Option 1 = Addition\n");
+        printf("Option 2 = Subtraction\n");
+        printf("Option 3 = Multiplication\n");
+        printf("Option 4 = Division\n");
+        scanf("%d",&H);
+        printf("Please enter an integral number\n");
+        scanf("%d",&a);
+        printf("Please enter another integral number.\n");
+        scanf("%d",&b);
+    switch(H)
+	{
+	int c;	
+	case 1:
+	{
+	 printf("You have selected Addition.\n");
+	 c= a+b;
+	 printf("%d",c);
+	 break;
+	}
+	case 2:
+	{
+	 printf("You have selected Subtraction.\n");
+	 c= a-b;
+	 printf("%d",c);
+	 break;
+	}
+        case 3:
+	{
+	 printf("You have selected Multiplication.\n");
+	 c= a*b;
+	 printf("%d",c);
+	 break;
+	}
+        case 4:
+	{
+	 printf("You have selected Division.\n");
+	 c= a/b;
+	 printf("%d",c);
+	 break;
+	}
+	default:
+	{
+	 printf("Give correct input");
+	}}}

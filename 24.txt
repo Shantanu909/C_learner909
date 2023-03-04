@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+void fact(int n)
+{
+
+
+int product =1;
+for(int i =1;i<n+1;i++)
+{
+   product= i*product;
+}
+printf("Factorial of %d =%d",n,product);
+}
+
+int main()
+{
+	int n;
+	printf("Please enter a number");
+    scanf("%d",&n);
+    fact(n);
+}

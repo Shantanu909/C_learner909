@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+ #include<stdio.h>
+int main()
+{
+  int N,H;
+  printf("Please enter 9 values for the matrix\n");
+int arr[9];
+for(int i =0;i<9;i++)
+{
+  scanf("%d",&arr[i]);
+}
+for(int j =0;j<9;j++)
+{
+  printf("%d",arr[j]);
+}
+
+  
+   
+	
+       
+}
+}
